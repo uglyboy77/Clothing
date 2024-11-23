@@ -1,4 +1,6 @@
-# Overall
+<h1>⛓️‍💥Overall </h1>
+<hr>
+<br>
 This site is a Frontend design(UI) only.
 It encompasses of HTML,CSS & JS. A well structured responsive website that was built to showcase my in-depth knowledge in website development.<br>
 Trenzy Site took almost 72 hours of development, ensring every element is well structured and appropriate.<br>
@@ -11,4 +13,15 @@ About Site: A clothing site
 <br>
 <b>NOTE</b> <br>
 This site is an DEMONSTRATION site and all the products there are not including the prices,support mail,socials & name.
+<br>
+    <h1>⛓️‍💥FEATURES</h1>
+•Responsive Design 
+•Configuration of Dark mode
+•Dynamic Menu
+etc
+<br>
+    <h1>ACCESSIBILITY </h1>
+ 
+
+
 
