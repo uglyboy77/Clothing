@@ -22,7 +22,8 @@ This site is an DEMONSTRATION site and all the products there are not including 
 etc
 <br>
     <h1>ACCESSIBILITY </h1>
- 
+[ https://trenzyfashion.netlify.app/ ]<br>
+click on the above link to access the site. 
 
 
 
