@@ -15,9 +15,10 @@ About Site: A clothing site
 This site is an DEMONSTRATION site and all the products there are not including the prices,support mail,socials & name.
 <br>
     <h1>⛓️‍💥FEATURES</h1>
-•Responsive Design 
-•Configuration of Dark mode
-•Dynamic Menu
+•Responsive Design <br>
+•Configuration of Dark mode<br>
+•Dynamic Menu<br>
+•Animated Loading screen
 etc
 <br>
     <h1>ACCESSIBILITY </h1>
