@@ -21,7 +21,7 @@ This site is an DEMONSTRATION site and all the products there are not real inclu
 •Animated Loading screen
 etc
 <br>
-    <h1>ACCESSIBILITY </h1>
+    <h1>⛓️‍💥ACCESSIBILITY </h1>
 [ https://trenzyfashion.netlify.app/ ]<br>
 click on the above link to access the site. 
 
