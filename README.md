@@ -1,5 +1,5 @@
 <h1>⛓️‍💥Overall </h1>
-<hr>
+
 <br>
 This site is a Frontend design(UI) only.
 It encompasses of HTML,CSS & JS. A well structured responsive website that was built to showcase my in-depth knowledge in website development.<br>
