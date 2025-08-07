@@ -13,25 +13,49 @@
      <span class="load"></span>
    </div>
         <div id="ack">
-          created by theuglyboy
+         
         </div>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
 </head>
 <body>
   <div id="main">
-<div class="header">
-  <h1>Trenzy®</h1>
-   <div class="menus" onclick="toggleDown()">
+     
+<header>
+  <span class="brand-name">Trenzy®</span> 
+
+  <div class="items">
+    <div class="items1">
+  <span class="search">
+     <button id="searchbutton" onclick="toggleMenu()">
+   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</i></button>
+      <span class="searchbox">
+        <span class="searchArea">
+          
+        </span>
+       </span>
+  <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')" id="cart">
+  <img src="https://cdn-icons-png.flaticon.com/256/3917/3917688.png" alt="" height="20" width="20" id="cartbutton" onclick="alert('Not Avail')">
+  <img src="/IMG_4596.png" alt="" height="24" width="24" onclick="alert('Not Avail')" id="lovee">
+  </div>
+ <div class="menus" onclick="togglemenuDown(this)">
    <div class="menu"></div>
    <div class="menu"></div>
    <div class="menu"></div>
-   <nav class="dropdown" id="drop"><button id="toggle" onclick="toggleTheme()">🌙</button>
-     <button id="toggle" onclick="togleDown()">❌</button>
-     <span class="droptext">Trenzy®<br>
-     </span>
+   </div>
+   </div>
+   </header>
+
+<div class="dropdownmenu">
+     <span class="droptext">Trenzy®
+      </span><br>
     <span class="droptxt"><h1>ABOUT US</h1>
   Trenzy is your ultimate destination for     amazing discounts and quality products. We are dedicated to providing exceptional value, offering up to 50% off on your first purchase. Our mission is to make shopping easy, affordable, and enjoyable for everyone. With a focus on customer satisfaction, we deliver reliable products and seamless service. Join us today and experience the joy of smarter shopping!
 	<h2>Offers</h2>
@@ -59,16 +83,9 @@
      <a href="#signup">Sign-up</a>
    </nav><br>
    </div>
-   <span class="search">
-     <button id="searchbutton" onclick="toggleMenu()">
-  <img src="/IMG_4535.png" alt="/IMG_4535.png" height="20" width="20"></button></span>
-      <span class="searchbox">
-        <input id="searching" class="sea" value="" placeholder="search" type="textbox">     </span>
-  <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')" id="cart">
-  <img src="https://cdn-icons-png.flaticon.com/256/3917/3917688.png" alt="" height="20" width="20" id="cartbutton" onclick="alert('Not Avail')">
-  <img src="/IMG_4596.png" alt="" height="24" width="24" onclick="alert('Not Avail')" id="lovee">
- 
-  <nav id="nav">
+ </div>
+   
+  <nav>
   <a href="#">Jeans</a>
   <a href="#">Shorts</a>
   <a href="#">Tops</a>
@@ -76,220 +93,178 @@
   <a href="#">Jackets</a>
   </nav>
   
-<hr>
 </div>
-<div class="semi">
+<div class="updates">
   <a href="#">New Arrivals</a>
   <a href="#">Discounts</a>
   <a href="#">Hot</a>
 </div>
 
-<div class="imagecontainer" id="home">
-  <!-- Product 1 -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4558.jpeg" alt="black jacket" height="193" width="190"> </a>
-    <span class="icon3">
-         <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-       </span>
-       <br />
-       <span class="text">
-         <a href="#">
-     Designed Black Jacket <br>
-    super hot -XL </a> </span>
-    <span class="love">
-        <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')">
-        </span>
-        <br>
-        <a href="#"><b>GHS710.99</b><br>
-  </a>
-</span>
-<!-- Product 2 -->
-<span class="p">
-    <span class="badge">New Arrival!</span>
-    <a href="#">
-     <img src="/IMG_4538.jpeg" alt="black sneaker" height="170" width="180"> </a>
-       <span class="icon3">
-         <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-       </span> <br> <a href="#">
-       <span class="text">
-     Black & White sneaker <br>
-     SIZE 41    </a>  <span class="love">
-        <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"></span><br><a href="#">
-        <b>GHS320.99</b><br>
-       </span>
-</span>
-<!-- Product 3 -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4548.jpeg" alt="stripped shirt" height="10" width="10"></a>
-</span>
-<!-- Product -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4544.jpeg" alt="crazy jeans" height="270" width="150"> </a> <span class="icon">
-    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-  </span><a href="#"><br>
-    <span class="text">
-      Blue Crazy Jeans <br>
-      Super Hot - L </a> <span class="love">
-    <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"></span><br><a href="#">
-    <b>GHS899.99</b> <br>
-</span>
-</a>
-</span>
-<!-- product 4 -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4545.jpeg" alt="blue jeans" height="270" width="150"></a>       <span class="icon">
-         <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-       </span><br><a href="#">
-      <span class="text">
-    Faded blue Jeans <br>
-    M   </a> <span class="love">
-    <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"></span><br> <a href="#">
-    <b>GHS200.99</b> <br> 
-      </span>
-  </a>
-</span>
-<!-- Product 5-->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4556.jpeg" alt="army jacket" height="200" width="200"></a>
-  <span class="icon6">
-    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-  </span><a href="#"><br>
-    <span class="text">
-      US Army Jacket <br>
-      Super Hot - M </a> <span class="love">
-    <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"></span><br><a href="#">
-    <b>GHS1099.99 </b><br>
-</span>
-</a>
-</span>
-<!-- Product 6 -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4554.jpeg" alt="brown jacket" height="192" width="180"></a> <span class="icon5">
-    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-  </span><a href="#"><br>
-    <span class="text">
-      Brown Leather Jacket <br>
-      M </a> <span class="love">
-    <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"><br></span><a href="#"><br>
-    <b>GHS799.99 </b>
-</span>
-</a>
-</span>
-<!-- Product 7 -->
+  <div id="products-list">
+    <div class="product">
+      <img src="" alt="Product 1">
+      <h3>Product 1</h3>
+      <p> $20.00</p>
+      <button class="cart-button" aria-label="Cart">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
 
-<!-- Product 8 -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4645.jpeg" alt="beige leather jeans" height="190" width="170"></a> <span class="icon13">
-    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-  </span><a href="#"><br>
-    <span class="text">
-      Beige Leather Jacket <br>
-      XL </a>
-  <span class="love">
-    <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"></span> <br><a href="#">
-    <b>GHS399.99</b> <br>
-</span>
-</a>
-</span>
-<!-- Product 9 -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4543.jpeg" alt="black dotted jeans" height="250" width="250"></a> <span class="icon7">
-    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-  </span><br><a href="#">
-    <span class="text">
-      White dotted Black Jeans <br>
-      Super Hot - L </a> <span class="love">
-    <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"></span><br><a href="#">
-    <b>GHS1349.99 </a><br> </b><s>GHS2999.99</s> 45% off <br>
-</span>
-</span>
-<!-- Product 10 -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4537.jpeg" alt="brown shorts"  height="150" width="150"> </a>
-           <span class="icon">
-         <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-       </span><a href="#"> <br> <span class="text">
-      Neat Brown Shorts <br>
-      S </a>
-            <span class="love">
-        <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"></span><br><a href="#">
-      <b>GHS199.99 </B> <br>
-    </span>
-  </a>
-</span>
-<!-- Product 11 -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4540.jpeg" alt="black & yellow shorts" height="150" width="150"> </a> <span class="icon">
-    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-  </span><a href="#"><br>
-    <span class="text">
-      Black Yellow shorts <br>
-      S </a>
-  <span class="love">
-    <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"></span><br><a href="#">
-    <b>GHS 299.99 </b><br>
-</span>
-</a>
-</span>
-<!-- Product 12-->
-<span class="p5">
-  <a href="#">
-    <img src="/IMG_4546.jpeg" alt="designed shirt" height="180" width="150"></a>       <span class="icon9">
-         <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-       </span> <a href="#">
-    <br> <span class="text">
-     Designed Trumpet T-Shirt <br>
-     Super Hot - L</a> <span class="love">
-      <img src="https://w7.pngwing.com/pngs/650/338/png-transparent-computer-icons-heart-graffiti-heart-love-organ-objects.png" alt="" height="20" width="24" onclick="alert('Not Avail')"></span>
-      <a href="#"><br><b>GHS399.99</b> </a> <br>
-      <s>GHS1099.99</s>
-      30% off
-    </span>
-</span>
+    </div>
+    <div class="product">
+      <img src="" alt="Product 2">
+      <h3>Product 2</h3>
+      <p> $25.00</p>
+      <button class="cart-button" aria-label="Cart">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
 
-<!-- product 13 -->
-<span class="p">
-  <a href="#">
-    <img src="/IMG_4548.jpeg" alt="black and white stripped" height"150" width="150">
-  </a>
-  <span class="icon11">
-    <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" height="20" width="20" onclick="alert('Not Avail')">
-  </span>
-  <a href="#">
-    <br> <span class="text">
-      White & Black Stripped T-shirt <br>
-      Super Hot - S </a> <span class="love"></span> <a href="#"><br><b>GHS1599.99</b></a>
-    </span>
-  </a>
-</span>
-</div>
-</div>
+    </div>
+    <div class="product">
+      <img src="" alt="Product 3">
+      <h3>Product 3</h3>
+      <p> $30.00</p>
+      <button class="cart-button" aria-label="Cart">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
 
+    </div>
+    <div class="product">
+      <img src="" alt="Product 4">
+      <h3>Product 4</h3>
+      <p> $35.00</p>
+      <button class="cart-button" aria-label="Cart" onclick="alert('Item added to cart')">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
+
+    </div>
+    <div class="product">
+      <img src="" alt="Product 5">
+      <h3>Product 5</h3>
+      <p> $40.00</p>
+      <button class="cart-button" aria-label="Cart">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
+
+    </div>
+    <div class="product">
+      <img src="" alt="Product 6">
+      <h3>Product 6</h3>
+      <p> $45.00</p>
+      <button class="cart-button" aria-label="Cart">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
+
+    </div>
+    <div class="product">
+      <img src="" alt="Product 7">
+      <h3>Product 7</h3>
+      <p> $50.00</p>
+      <button class="cart-button" aria-label="Cart">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
+
+    </div>
+    <div class="product"> 
+      <img src="" alt="Product 8">
+      <h3>Product 8</h3>
+      <p> $55.00</p>
+      <button class="cart-button" aria-label="Cart">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
+
+    </div>
+    <div class="product">
+      <img src="" alt="Product 9">
+      <h3>Product 9</h3>
+      <p> $60.00</p>
+      <button class="cart-button" aria-label="Cart">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
+
+    </div>
+    <div class="product">
+      <img src="" alt="Product 10">
+      <h3>Product 10</h3>
+      <p> $65.00</p>
+      <button class="cart-button" aria-label="Cart">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</button>
+
+    </div>
+    </div>
 <!--Slideshow -->
 <div class="slideshow" id="Products">
+  <div class="prevNextbtn">
   <button id="Previous" onclick="moveSlide(-1)">PREVIOUS</button>
   <button id="next" onclick="moveSlide(1)">NEXT</button>
+  </div>
   <div class="slideshow-container">
-  <img src="/IMG_4584.jpeg" alt="pose1" height="400" width="400">
-  <img src="/IMG_4583.jpeg" alt="pose2" height="400" width="400">
-  <img src="/IMG_4582.jpeg" alt="pose3" height="400" width="400">
-  <img src="/IMG_4581.jpeg" alt="pose4" heigh="400" width="400">
+  <img src="/IMG_4584.jpeg" alt="pose1" class="image1" height="350" width="350">
+  <img src="/IMG_4583.jpeg" alt="pose2" class="image1" height="350" width="350">
+  <img src="/IMG_4582.jpeg" alt="pose3" class="image1" height="350" width="350">
+  <img src="/IMG_4581.jpeg" alt="pose4" class="image1" height="350" width="350">
+  <img src="C:\Users\user\OneDrive\Belgeler\FilmHouse\Clothing\12222174-7034704913764351.avif" alt="pose5" class="image1" height="350" width="350">
+  <img src="" alt="pose6" class="image1" height="350" width="350">
+  <img src="" alt="pose7" class="image1" height="350" width="350">
+  <img src="" alt="pose8" class="image1" height="350" width="350">
+  <img src="" alt="pose9" class="image1" height="350" width="350">
 </div>
 </div>
 <div class="textus" id="signup">
-  <h3>NEVER MISS A THING</h3>
+  <h3>NEVER MISS A THING!</h3>
   Sign up for promotions, tailored new arrivals, stock updates and more – straight to your inbox
   <p>GET UPDATES BY</p>
+  
   <form>
     <label>
   <input type="checkbox" id="check1" name="option1">
@@ -308,12 +283,13 @@
     <option value="Ghana">🇬🇭     +233  </option>
     <option value="Nigeria">🇳🇬  +234       </option>
     <option value="USA">🇺🇸 +1        </option>
-    <option value="England">🏴󠁧󠁢󠁥󠁮󠁧󠁿+44</option>
+    <option value="England">ENG󠁥+44</option>
   </select>
 <input type="number" value="" id="number"  placeholder="Your Number....." max="999999999" min="100000000" oninvalid="this.setCustomValidity('Enter a correct number.')"oninput="this.setCustomValidity('')"required>
   </span><br>
   <button type="submit" id="sign-up">Sign Up</button>
   </form>
+  
 <div class="Des">By signing up, you consent to receiving marketing by email and/or SMS and acknowledge you have read our Privacy Policy. Unsubscribe anytime at the bottom of our emails or by replying STOP to any of our SMS.</div>
 <div class="End">
   <h2>Trenzy®</h2> 
@@ -343,5 +319,5 @@
 </div>
 <footer>©2024-baffourbrenya@gmail.com</footer>
   </div>
-  <script src="/main.js"></script>
+  <script src="/main.js"> </script>
 </body>

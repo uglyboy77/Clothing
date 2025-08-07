@@ -1,4 +1,4 @@
-// configuration for Darkmode
+
 function toggleTheme() {
   const body = document.body;
   const themeIcon = document.getElementById('toggle');
@@ -6,9 +6,9 @@ function toggleTheme() {
   body.classList.toggle('dark-mode');
 
   if (body.classList.contains('dark-mode')) {
-    themeIcon.textContent = '🌞'; 
+    themeIcon.textContent = ''; 
   } else {
-    themeIcon.textContent = '🌙';
+    themeIcon.textContent = '';
   }
   const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
   localStorage.setItem('theme', theme);
@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (theme === 'dark') {
     document.body.classList.add('dark-mode');
-    themeIcon.textContent = '🌞'; 
+    themeIcon.textContent = ''; 
   } else {
-    themeIcon.textContent = '🌙'; 
+    themeIcon.textContent = ''; 
   }
 });
 
@@ -30,10 +30,23 @@ function toggleMenu() {
   const dropmenu = document.querySelector('.searchbox');
   dropmenu.classList.toggle('show');
 }
-function toggleDown() {
- const down = document.getElementById('drop');
- down.classList.toggle('show');
+
+function togglemenuDown(element) {
+  const down = document.querySelector('.dropdownmenu');
+  const items = document.querySelector('.items1');
+  const name = document.querySelector('.brand-name');
+  element.classList.toggle("active");
+  down.classList.toggle('show');
+
+  if (down.classList.contains('show')) {
+    items.style.display = 'none';
+    name.style.display = 'none';
+  } else {
+    items.style.display = 'inline';
+    name.style.display = 'inline';
+  }
 }
+
 
 // configuration for next/button images
 let currentSlide = 0;
@@ -52,19 +65,38 @@ function moveSlide(direction) {
   const container = document.querySelector('.slideshow-container');
   container.style.transform = `translateX(-${currentSlide * slideWidth}px)`; 
 }
+ 
+const signupBtn = document.getElementById('sign-up');
+signupBtn.addEventListener('click', (e) => {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const anyChecked = Array.from(checkboxes).some(cb => cb.checked);
+  if (!anyChecked) {
+    e.preventDefault();
+    alert('Please check at least one option.');
+  }
+});
+
+
+
+
+
+
+
+
+
 
 // configuration for loading screen
-setTimeout(() => {
-  const loading = document.getElementById('loading');
+ /* setTimeout(() => {
+ const loading = document.getElementById('loading');
   const main = document.getElementById('main');
   if (loading && main) {
     loading.style.zIndex = '0';
     loading.style.display = 'none';
     main.style.zIndex = '1000';
   }
-},1000);
+},2000);
                 
-setTimeout(() => {
+// setTimeout(() => {
   const loading = document.getElementById('ack');
   const main = document.getElementById('main');
   if (loading && main) {
@@ -72,5 +104,5 @@ setTimeout(() => {
     loading.style.display = 'none'; 
     main.style.zIndex = '1000';
   }
-}, 1000);
+}, 2000); */
 
