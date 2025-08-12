@@ -78,13 +78,6 @@ signupBtn.addEventListener('click', (e) => {
 
 
 
-
-
-
-
-
-
-
 // configuration for loading screen
  /* setTimeout(() => {
  const loading = document.getElementById('loading');

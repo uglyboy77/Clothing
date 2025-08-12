@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Details</title>
+</head>
+<body>
+<div class="product-header">
+    <a href="index.html" class="back-button">Back to Products</a>
+<img id="product-header-image" alt="Product Image">
+<h1 id="product-header-name"></h1>
+</div>
+<div class="product-container">
+    <div class="product-details">
+        <img id="product-details-image" alt="Product Image">
+        <h2 id="product-details-name"></h2>
+        <p id="product-details-price"></p>
+    </div>
+    <div class="plusMinusbtn">
+        <button class="minus" onclick="add(-1)">-</button>
+        <span class="quantity">1</span>
+        <button class="plus" onclick="add(1)">+</button>
+    </div>
+    <button class="buyNow" onclick="buyNow()">Buy Now</button>
+    <div class="add-to-cart-total">
+        <p>Total: <span id="total-price"></span></p>
+    <button class="add-to-cart" onclick="addToCart()"> Add to Cart</button>
+    </div>
+</div>
+<div class="featured-products">
+    <h2>Featured Products</h2>
+   <div class="featured-list" id="featured-list"></div>
+</div>
+ <script src="product.js" ></script>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get('id');
+    
+    if (products[productId]) {
+        document.getElementById('product-header-image').src = products[productId].image;
+        document.getElementById('product-header-name').textContent = products[productId].name;
+        document.getElementById('product-details-image').src = products[productId].image;
+        document.getElementById('product-details-name').textContent = products[productId].name;
+        document.getElementById('product-details-price').textContent = `₵${parseInt(products[productId].price).toFixed(2)}`;
+    } else {
+        document.querySelector('.product-container').innerHTML = '<p>Product not found.</p>';
+    }
+    function addToCart() {
+        const quantity = document.querySelector('.quantity').textContent;
+        alert(`Added ${quantity} of ${document.getElementById('product-name').textContent} to cart.`);
+    }
+    function buyNow() {
+        const quantity = document.querySelector('.quantity').textContent;
+        alert(`Buying ${quantity} of ${document.getElementById('product-name').textContent}.`);
+    }
+    function add(value) {
+        const quantityElement = document.querySelector('.quantity');
+        let quantity = parseInt(quantityElement.textContent);
+        quantity += value;
+        if (quantity < 1) quantity = 1;
+        quantityElement.textContent = quantity;
+        document.getElementById('total-price').textContent = `₵${(products[productId].price * quantity).toFixed(2)}`;
+    }
+    let otherProducts = Object.keys(products).filter(id => id !== productId);
+   otherProducts.sort(() => Math.random() - 0.5);
+    let featuredSelection = otherProducts.slice(0, 4); 
+
+    const featuredList = document.getElementById('featured-list');
+    featuredSelection.forEach(id => {
+        const product = products[id];
+        const itemHTML = `
+        <div class="featured-item">
+            <a href="product.html?id=${id}">
+                <img src="${product.image}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p>₵${(product.price).toFixed(2)}</p>
+            </a>
+        </div>
+        `;
+        featuredList.innerHTML += itemHTML;
+    });
+</script>
+</body>
+</html>

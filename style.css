@@ -4,6 +4,7 @@ html, body {
     overflow-x: hidden;
     background-color: #ffffffea;
     margin: 0;
+    zoom: 100%;
  }
  /* light mode styles */
  a{
@@ -111,6 +112,8 @@ header{
 .dropdownmenu.show{
   display: block;
   background-color: rgb(40, 39, 39);
+  overflow-x: hidden;
+  
 }
 .menu{
   height:3px;
@@ -140,9 +143,20 @@ header{
 }  
 
 .droptext{
-  color:white;
-  font-size: 35px;
-  margin-left:35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 100px; 
+  text-align: center;
+  color: white;
+}
+.mail_link{
+  color: aliceblue;
+}
+.mail_link:hover{
+  text-decoration: underline;
+  color: blue;
 }
 .droptxt{
   color: white;
@@ -156,8 +170,8 @@ header{
   gap: 10px;
 }  
 .social a{
-  margin-left: 40px;
-  height: 50px;
+  width: 100%;
+  margin: auto;
 }
 .sea{
   border: solid;
@@ -212,7 +226,7 @@ nav{
 nav a{
   color:black;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight:20;
  
 }
@@ -286,6 +300,11 @@ nav a:hover{
   border-radius: 8px;
   cursor: pointer;
 }
+#Previous:hover,
+#next:hover{
+  background-color: rgb(3, 3, 116);
+}
+
 h4{
   position: absolute;
   font-size: 150px;
@@ -447,7 +466,7 @@ code{
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  height: 100px; /* Adjust as needed */
+  height: 100px; 
   text-align: center;
 }
 .media{
@@ -496,6 +515,12 @@ code{
 footer{
   font-weight:10;
   text-align: center;
+}
+/* Product styles */
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* Dark Mode Styles */
@@ -549,4 +574,7 @@ body.dark-mode .social {
 }
 body.dark-mode .social a {
   color: white;
+}
+
+@media (min-width:350px) and (max-width:945px) {
 }
