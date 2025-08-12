@@ -2,7 +2,6 @@ html, body {
     font-size: 15px; 
     font-family: 'Poppins';
     overflow-x: hidden;
-    background-color: #ffffff;
     margin: 0;
     zoom: 100%;
  }
@@ -523,6 +522,7 @@ footer{
 }
 
 /* Dark Mode Styles */
+/*
 body.dark-mode {
   background-color: black;
   color: white;
@@ -573,7 +573,7 @@ body.dark-mode .social {
 }
 body.dark-mode .social a {
   color: white;
-}
+} */
 
 @media (min-width:350px) and (max-width:945px) {
 }
