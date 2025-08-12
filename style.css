@@ -2,7 +2,7 @@ html, body {
     font-size: 15px; 
     font-family: 'Poppins';
     overflow-x: hidden;
-    background-color: #ffffffea;
+    background-color: #ffffff;
     margin: 0;
     zoom: 100%;
  }
@@ -12,7 +12,7 @@ html, body {
    color: black; 
  }
 
-/* #loading{ 
+ #loading{ 
   background-color: black;
   align-items: center;
   justify-content: center;
@@ -69,7 +69,6 @@ html, body {
   text-align: center;
   margin-top: 150%;
 }
-*/
 
 #main{
   display: block;
