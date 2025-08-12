@@ -76,10 +76,7 @@ signupBtn.addEventListener('click', (e) => {
   }
 });
 
-
-
-// configuration for loading screen
- /* setTimeout(() => {
+  setTimeout(() => {
  const loading = document.getElementById('loading');
   const main = document.getElementById('main');
   if (loading && main) {
@@ -89,7 +86,7 @@ signupBtn.addEventListener('click', (e) => {
   }
 },2000);
                 
-// setTimeout(() => {
+ setTimeout(() => {
   const loading = document.getElementById('ack');
   const main = document.getElementById('main');
   if (loading && main) {
@@ -97,5 +94,5 @@ signupBtn.addEventListener('click', (e) => {
     loading.style.display = 'none'; 
     main.style.zIndex = '1000';
   }
-}, 2000); */
+}, 2000); 
 
